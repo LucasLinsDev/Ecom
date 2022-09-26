@@ -5,6 +5,7 @@ import { Layout } from '../../components/Layout/Layout';
 import styles from './Home.module.scss';
 import { RowBlog } from './RowBlog/RowBlog';
 import { RowProducts } from './RowProducts/RowProducts';
+import { RowTestmonial } from './RowTestmonial/RowTestmonial';
 
 export function Home(){
   return(
@@ -17,6 +18,7 @@ export function Home(){
           ))}
            <Companies/>
            <RowBlog/>
+           <RowTestmonial/>
         </Layout>
     </>
   )
