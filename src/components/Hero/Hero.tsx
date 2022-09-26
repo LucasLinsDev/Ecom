@@ -1,8 +1,6 @@
 import styles from './Hero.module.scss';
 import banner from '../../resource/img/banner.png';
-import 'swiper/css';
-import 'swiper/css/navigation'
-import 'swiper/css/thumbs'
+
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {Navigation,Thumbs} from 'swiper';
 
@@ -16,7 +14,7 @@ export function Hero(){
   
   return (
     <>
-      <div className={styles.banner}>
+      <div className={styles.banner}     data-testid='swiper'>
 
       <div className={styles.content_arrow}>
 
@@ -26,7 +24,7 @@ export function Hero(){
           prevEl:'.prev',
           nextEl:'.next',
         }}
-
+    
         loop={true}
         spaceBetween={10}
         modules={[Navigation,Thumbs]}

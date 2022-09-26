@@ -1,0 +1,12 @@
+@import '../../../styles/layout.scss';
+
+.banner_products{
+  img{
+    width:100%;
+  }
+
+  @include mobile(){
+    display: none;
+  }
+
+}

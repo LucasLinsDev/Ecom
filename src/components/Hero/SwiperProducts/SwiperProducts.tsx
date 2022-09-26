@@ -18,7 +18,7 @@ export function SwiperProducts(){
                   nextEl:'.next2',
                 }}
                 spaceBetween={10}
-              
+                data-test-id='swiper_products'
                 modules={[Navigation,Thumbs]}
                 grabCursor={true}
                 className={styles.swiper_adpted}

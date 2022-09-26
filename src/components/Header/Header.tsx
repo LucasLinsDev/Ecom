@@ -28,7 +28,7 @@ export function Header(){
               <HiMenu size={34} color='white' className={styles.menu_icon} onClick={()=>{setShow(!show)}}/>
         </div>
             <Logo/>
-          {show   && <Navbar/> }  
+          {show   && <Navbar /> }  
             <SearchBox/>
         <div className={styles.icons}>
            <Cart/>
