@@ -1,0 +1,46 @@
+@import '../../../styles/layout.scss','../../../styles/variables.scss';
+
+
+.navbar{
+  max-width:max-content;
+  width:100%;
+  display:flex;
+  gap:16px;
+  margin-right:auto;
+  @include mobile(){
+    position:absolute;
+    left:0px;
+    right:0px;
+    top:99%;
+    width:100%;
+    flex-direction: column;
+    background:#fafbff;
+    pointer-events:none;
+    width:100%;
+    max-width:100%;
+    border-bottom:1px solid blue;
+  }
+
+}
+
+.navbar_link{
+  font-size:16px;
+  font-weight:400;
+  transition:all 0.5s ease;
+  text-decoration:none;
+  color:black;
+  text-transform: uppercase;
+  cursor:pointer;
+  &:hover{
+    color: var(--primary-color);
+    opacity:0.7;
+  }
+
+  @include mobile{
+    padding:16px 24px;
+    width:100%;
+    max-width:100%;
+   
+  }
+  
+}

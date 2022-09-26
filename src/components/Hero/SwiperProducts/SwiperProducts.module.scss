@@ -1,0 +1,39 @@
+.content_arrow {
+  position:relative;
+  > div:last-child{
+
+ 
+    width:max-content;
+   
+    position:absolute;
+    right:0px;
+    height:100%;
+    display:Flex;
+    align-items: center;
+    top:0px;
+    z-index: 1000;
+    &:hover{
+      opacity:0.7;
+    }
+    cursor:pointer;
+     &:hover{
+      opacity:0.7;
+    }
+  }  
+   > div:nth-child(2){
+    transform: rotate(180deg);
+    width:max-content;
+  
+    position:absolute;
+    left:0px;
+    height:100%;
+    display:Flex;
+    align-items: center;
+    top:0px;
+    z-index: 1000;
+    &:hover{
+      opacity:0.7;
+    }
+    cursor:pointer;
+  }  
+}

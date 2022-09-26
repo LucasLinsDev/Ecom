@@ -1,0 +1,46 @@
+@import '../../../styles/variables.scss','../../../styles/layout.scss';
+
+.new_products{
+    padding-top:22px;
+    padding-bottom:22px;
+}
+
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:relative;
+  h1{
+    font-size:22px;
+    color:black;
+    font-weight: 500;
+  }
+  a{
+      font-size:13px;
+      color:#0156FF;
+      position: absolute;
+      bottom:0px;
+      right:0px;
+      transition:all 0.5s ease;
+
+      &:hover{
+        opacity:0.7;
+      }
+
+    
+  }
+
+  @include mobile(){
+     
+    flex-direction: column;
+    gap:16px;
+    height: 50px;
+    align-items: flex-start;
+  
+     
+          a{
+          left:0px;
+        }
+      
+  }
+}

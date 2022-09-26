@@ -1,0 +1,18 @@
+
+.avatar{
+
+
+  display:flex;
+  align-items:center;
+  
+
+
+  img{
+    width:47px;
+    transform:all 0.4s ease;
+    cursor:pointer;
+    &:hover{
+        opacity:0.7;
+    }
+  }
+}

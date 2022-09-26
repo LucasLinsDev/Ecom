@@ -1,0 +1,49 @@
+@import './nomalize', './helpers','./palette','./typography','./variables','./layout';
+
+
+html {
+  height: -webkit-fill-avaliable;
+}
+
+html,body {
+  display:block;
+  min-height:100vh;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin:0;
+  padding:0;
+}
+
+p{
+  margin:0;
+  padding:0;
+  line-height:1.5;
+}
+
+a{
+  text-decoration: none;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.underline{
+  border-bottom:1px solid;
+}
+
+.container{
+  max-width:1440px;
+  width:100%;
+  height:auto;
+  padding:0px 24px;
+  display:flex;
+  margin:0 auto;
+  gap:16px;
+
+}

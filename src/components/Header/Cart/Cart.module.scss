@@ -1,0 +1,20 @@
+.icon_card{
+
+  background:var(--secondary-color);
+  width:47px;
+  height:47px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border-radius:100%;
+
+  cursor:pointer;
+  transition:all 0.4s ease;
+
+  &:hover{
+    opacity:0.7;
+  }
+
+  
+
+}
