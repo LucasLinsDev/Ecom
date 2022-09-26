@@ -4,6 +4,7 @@ import { Hero } from '../../components/Hero/Hero';
 import { Layout } from '../../components/Layout/Layout';
 import styles from './Home.module.scss';
 import { RowBlog } from './RowBlog/RowBlog';
+import { RowIcons } from './RowIcons/RowIcons';
 import { RowProducts } from './RowProducts/RowProducts';
 import { RowTestmonial } from './RowTestmonial/RowTestmonial';
 
@@ -19,6 +20,7 @@ export function Home(){
            <Companies/>
            <RowBlog/>
            <RowTestmonial/>
+           <RowIcons/>
         </Layout>
     </>
   )
