@@ -1,0 +1,36 @@
+@import '../../../../styles/variables.scss' ,'../../../../styles/layout.scss';
+
+.menushow{
+  color:white;
+
+  p{
+    font-size:24px;
+    color:var(--primary-silver);
+  }
+
+  display:flex;
+  justify-content: space-between;
+
+  svg{
+   opacity: 0;
+    @include mobile(){
+   opacity:1;
+  }
+  }
+ 
+
+}
+
+.menu{
+    ul{
+    margin-top:16px;
+    list-style:none;
+    width:100%;
+    padding-left:0px;
+  }
+
+  ul li{
+    margin-bottom:8px;
+    font-size:13px;
+  }
+}
