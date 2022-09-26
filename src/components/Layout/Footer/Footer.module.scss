@@ -1,0 +1,46 @@
+@import '../../../styles/variables.scss';
+
+.footer{
+  width:100%;
+  padding:26px 24px;
+  background:var(--dark-color);
+}
+
+.footer_container{
+  max-width:1440px;
+  margin:0 auto;
+  display:flex;
+  flex-direction: column;
+  color:white;
+  >div{
+    padding:26px 24px;
+  }
+}
+.footer_header{
+  display:flex;
+  div{
+    flex:1;
+  }
+}
+
+.footer_center{
+  display:flex;
+  gap:16px;
+  justify-content: space-between;
+}
+
+.footer_bottom{
+  display:flex;
+  gap:16px;
+  justify-content:space-between;
+
+  
+}
+
+.box_right{
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  width:100%;
+  background:red;
+}
