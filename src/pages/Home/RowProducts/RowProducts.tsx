@@ -16,8 +16,18 @@ export function RowProducts(){
 
 
   return (
-    <>
-      <div className={styles.header}></div>
+    <div className={styles.container_products}>
+      <div className={styles.header}>
+        <button className={`${styles.filter} ${styles.filter_active}`}>
+            MSI GS Series
+        </button>
+        <button className={styles.filter}>
+            MSI GS Series
+        </button>
+         <button className={styles.filter}>
+            MSI GS Series
+        </button>
+      </div>
       <div className={styles.row}>
         
               <Banner/>
@@ -66,6 +76,6 @@ export function RowProducts(){
             
      
       </div>
-    </>
+    </div>
     )
 }

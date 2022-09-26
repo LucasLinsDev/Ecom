@@ -1,7 +1,11 @@
 @import './variables';
 
 
-
+@mixin tablet() {
+  @media screen and (max-width:1100px){
+    @content;
+  }
+}
 
 
 @mixin mobileSmall() {

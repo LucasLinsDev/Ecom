@@ -1,0 +1,22 @@
+@import '../../../styles/layout.scss';
+.rowBlog{
+  width:100%;
+  display:grid;
+  gap:16px;
+
+  grid-template-columns: repeat( 6, minmax(100px, 1fr) );
+  >div{
+    max-width:100%;
+  }
+
+  @include tablet(){
+     grid-template-columns: repeat( 5, minmax(100px, 1fr) );
+  }
+
+  @include mobile(){
+    grid-template-columns: repeat( 4, minmax(100px, 1fr) );
+  }
+  @include mobileSmall(){
+    grid-template-columns: repeat( 2, minmax(100px, 1fr) );
+  }
+}
