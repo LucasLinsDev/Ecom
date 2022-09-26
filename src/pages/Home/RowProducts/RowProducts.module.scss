@@ -1,19 +1,35 @@
+@import '../../../styles/layout.scss';
 
 .row{
   display:flex;
+  align-items: center;
+  gap:26px;
+  >div:first-child{
+    width:280px;
+   
+  }
+  >div:last-child{
+    width:100%;
+  }
+
+  @include mobile(){
+    flex-direction: column;
+
+  >div:first-child{
+    width:100%;
+   
+  }
+  }
+
 }
 
-.left{
-  background:yellow;
-  width:233px;
-}
 
-.right{
-  max-width:1150px;
-  width:100%;
-  position:relative;
 
-    > div:last-child{
+.swiper_wrapper{
+  
+  position: relative;
+  
+     > div:last-child{
 
  
     width:max-content;
