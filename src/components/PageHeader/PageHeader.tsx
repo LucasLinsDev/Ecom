@@ -5,10 +5,11 @@ interface PropsPageHeader{
   location?:string;
   title?:string;
   button?:boolean;
+  content?:string
   
 }
 
-export function PageHeader({location=locationpage,title=titlepage,button}:PropsPageHeader){
+export function PageHeader({location=locationpage,title=titlepage,button,content}:PropsPageHeader){
 
  
   return(
@@ -17,6 +18,7 @@ export function PageHeader({location=locationpage,title=titlepage,button}:PropsP
         <div className={styles.page_content}>
            <h1>{title}</h1> {button && <button>Sign In</button>}
         </div>
+        <p>{content}</p>
       </div>
   )
 }

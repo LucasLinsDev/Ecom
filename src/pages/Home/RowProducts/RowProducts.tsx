@@ -44,6 +44,7 @@ export function RowProducts(){
                   className={styles.swiper_wrapper}
                   modules={[Navigation,Thumbs]}
                   grabCursor={true}
+                  slidesPerView={6}
                   breakpoints={{
                      320: {
                   width: 320,
@@ -62,6 +63,7 @@ export function RowProducts(){
                   width: 1400,
                   slidesPerView:6,
                 },
+                
                 }}>
                 
                   {[1,2,3,4,5,6,7,8,9,10].map(()=>(

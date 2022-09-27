@@ -7,14 +7,17 @@ interface InputProps{
   name?:string;
   id?:string;
   subtext?:string;
+  width?:string
   onChange?:()=>{};
+
 }
 
-export function Input({label,type,placeholder,subtext,name,id,onChange}:InputProps){
+export function Input({label,type,placeholder,subtext,name,id,onChange,width}:InputProps){
   return(
     <div className={styles.input_box}>
       <label>{label}</label>
-      <input type={type} placeholder={placeholder} name={name} id={id} onChange={onChange}/>
+      
+      <input type={type} placeholder={placeholder} name={name} id={id}  onChange={onChange}/>
       <div className={styles.input_subtext}>{subtext}</div>
     </div>
   )
