@@ -1,0 +1,40 @@
+@import '../../styles/layout.scss';
+
+.register{
+  display:flex;
+  gap:26px;
+  max-width:1200px;
+  width:100%;
+  margin:0 auto;
+  >div{
+  max-width:564px;
+  width:100%;
+  height:415px;
+  padding:46px;
+  background:#F5F7FF;
+
+ h1{
+    font-size:18px;
+        font-weight: 500;
+  }
+  p{
+    font-size:14px;
+    margin:16px 0px;
+    font-weight: 300;
+  }
+  ul{
+    margin-top:26px;
+    font-size:14px;
+    margin-left:16px;
+        font-weight: 300;
+        margin-bottom:26px;
+  } 
+  }
+
+  @include mobile(){
+    flex-direction: column;
+  }
+
+
+}
+

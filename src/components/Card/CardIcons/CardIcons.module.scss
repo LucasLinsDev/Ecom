@@ -23,7 +23,9 @@
 
   p{
     font-size:14px;
-    max-width:234px;
+    max-width:264px;
+    margin:0 auto;
+    text-align: center;
   }
 
   @include mobile(){

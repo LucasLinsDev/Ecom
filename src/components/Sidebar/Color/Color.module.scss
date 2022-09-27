@@ -1,0 +1,35 @@
+.box_header{
+  h2{
+    font-size:18px;
+    margin-bottom:8px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+
+
+.box_content{
+  input[type='radio']{
+        /* remove standard background appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* create custom radiobutton appearance */
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  padding: 2px;
+  /* background-color only for content */
+  background-clip: content-box;
+  border: 2px solid #bbbbbb;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  cursor:pointer;
+  }
+  input[type='radio']:nth-child(2){
+      background-color: var(--secondary-color);
+  }
+   input[type='radio']:nth-child(3){
+      background-color: var(--dark-color);
+  }
+}

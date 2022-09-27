@@ -1,0 +1,35 @@
+@import '../../styles/layout.scss';
+
+
+.page_header{
+  height:100px;
+  p{
+    font-size:12px;
+    margin-bottom:26px;
+    
+  }
+ 
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page_content{
+  display:flex;
+  gap:16px;
+  align-items: center;
+  height:50px;
+
+ h1{
+    font-size:30px;
+    font-weight: bold;
+    @include mobile{
+      font-size:20px;
+    }
+  }
+  button{
+    height:40px;
+    width:120px;
+  }
+ 
+}

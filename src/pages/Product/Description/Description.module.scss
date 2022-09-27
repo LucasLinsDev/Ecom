@@ -1,0 +1,52 @@
+@import '../../../styles//layout.scss';
+
+.description{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:16px;
+  padding-top:100px;
+  span:first-child{
+    color:black;
+  }
+
+  span{
+    font-size:14px;
+    color:blue;
+  }
+  p{
+    width:80%;
+    font-size:18px;
+
+    @include mobile(){
+      width:100%;
+    }
+
+  }
+
+
+  @include mobile(){
+    padding:46px 0px;
+  }
+
+}
+
+.description_colors{
+  input[type='radio']{
+        /* remove standard background appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* create custom radiobutton appearance */
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  padding: 2px;
+  /* background-color only for content */
+  background-clip: content-box;
+  border: 2px solid #bbbbbb;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  cursor:pointer;
+}
+}

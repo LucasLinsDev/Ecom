@@ -1,0 +1,33 @@
+.radio_item{
+
+  div{
+    width:36px;
+    height:50px;
+    display:flex;
+    align-items: flex-start;
+      input[type='radio']{
+        /* remove standard background appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* create custom radiobutton appearance */
+  display: inline-block;
+  width: 46px;
+  height: 25px;
+  padding: 2px;
+  /* background-color only for content */
+  background-clip: content-box;
+  border: 2px solid #bbbbbb;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  cursor:pointer;
+  position:relative;
+  top:16px;
+  }
+  }
+  display:flex;
+  gap:26px;
+  align-items: flex-start;
+  padding:26px 0px;
+
+}

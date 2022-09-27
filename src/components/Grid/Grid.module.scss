@@ -1,0 +1,19 @@
+@import '../../styles/layout.scss';
+
+.grid{
+  width:100%;
+  display:grid;
+  gap:16px;
+  grid-template-columns: repeat( auto-fit, minmax(186px, 1fr) );
+  >div{
+    border:1px solid rgb(239, 239, 255);
+  }
+}
+
+.grid{
+
+  @include mobileSmall(){
+      grid-template-columns: repeat( auto-fit, minmax(160px, 1fr) );
+  }
+
+}

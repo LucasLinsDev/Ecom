@@ -1,0 +1,26 @@
+@import '../../../styles/layout.scss';
+
+
+
+.product_content{
+  width:100%;
+  text-align: center;
+  position:relative;
+  padding:46px 0px;
+
+  @include mobile(){
+    padding:16px 0px;
+  }
+
+}
+
+.product_icones{
+  position:absolute;
+  display:flex;
+  flex-direction: column;
+  gap:8px;
+
+  top:46px;
+  left:24px;
+
+}

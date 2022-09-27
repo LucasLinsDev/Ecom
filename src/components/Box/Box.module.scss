@@ -1,0 +1,11 @@
+
+@import '../../styles/layout.scss';
+
+.box{
+  width:100%;
+
+  @include mobile(){
+     width:100% !important;
+  }
+
+}

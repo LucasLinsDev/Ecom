@@ -1,0 +1,21 @@
+
+@import '../../styles/layout.scss';
+
+.row{
+  display:flex;
+  gap:16px;
+  
+}
+
+.responsive_row{
+  @include mobile(){
+    flex-direction: column;
+  }
+}
+
+.reverse_row{
+   @include mobile(){
+  flex-direction:column-reverse;
+  }
+
+}

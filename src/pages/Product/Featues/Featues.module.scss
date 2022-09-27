@@ -1,0 +1,28 @@
+
+.featues_container{
+  padding:46px 0px;
+}
+.featues{
+  margin-bottom:46px;
+}
+.featues_grid{
+  display:flex;
+  gap:16px;
+  justify-content: space-between;
+  flex-wrap:wrap;
+}
+
+.featues_item{
+  flex:1 1 180px;
+  
+  text-align: center;
+  h2{
+    font-size:36px;
+    margin-bottom:16px;
+  }
+  p{
+    font-size:16px;
+    max-width:350px;
+    margin:0 auto;
+  }
+}

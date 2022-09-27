@@ -1,0 +1,24 @@
+
+@import '../../styles/layout.scss';
+
+.order_header{
+  margin-top:36px;
+  h2{
+    font-size:20px;
+    margin-bottom:18px;
+  }
+  hr{
+    margin-bottom:18px;
+  }
+  width:80%;
+  @include mobile(){
+    width:100%;
+  }
+}
+
+.order_inputs{
+  width:80%;
+  @include mobile(){
+    width:100%;
+  }
+}

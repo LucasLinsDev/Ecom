@@ -1,0 +1,23 @@
+@import '../../../styles/variables.scss' , '../../../styles/layout.scss';
+
+.buttonSearch{
+  display:flex;
+  gap:16px;
+  align-items: center;
+  flex-wrap: wrap;
+  height:60px;
+  width:max-content;
+
+
+}
+
+.button_content{
+@include mobile(){
+      font-size:12px;
+  }
+  
+  &.active{
+    border-bottom:2px solid var(--primary-color);
+    
+  }
+}
