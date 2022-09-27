@@ -1,0 +1,12 @@
+@import '../../../styles/variables.scss';
+
+.summary{
+  padding:16px;
+  background:var(--secondary-color);
+  h2{
+    font-weight:500;
+  }
+  p{
+    padding-top:16px ;
+  }
+}

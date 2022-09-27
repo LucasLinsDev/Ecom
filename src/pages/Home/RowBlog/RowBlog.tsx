@@ -5,7 +5,7 @@ export function RowBlog(){
   return(
     <div className={styles.rowBlog}>
      {[1,2,3,4,5,6,7,8,9,10,11,12].map((index)=>(
-       <CardBlog/>
+       <CardBlog key={index} />
      ))}
     </div>
   )

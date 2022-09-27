@@ -8,13 +8,13 @@ export function Bottom(){
     <>
       <div className={styles.social}>
         {[1,2,3,4,5,6].map((index)=>(
-          <img src={facebook}/>
+          <img src={facebook} key={index} />
         ))}
       </div>
       
       <div className={styles.card}>
         {[1,2,3,4,5,6].map((index)=>(
-          <img src={card}/>
+          <img src={card} key={index} />
         ))}
       </div>
 

@@ -66,8 +66,8 @@ export function RowProducts(){
                 
                 }}>
                 
-                  {[1,2,3,4,5,6,7,8,9,10].map(()=>(
-                      <SwiperSlide>
+                  {[1,2,3,4,5,6,7,8,9,10].map((index)=>(
+                      <SwiperSlide key={index}>
                           <CartProduct title='PS5' price='999.99' image={ps5} />
                         </SwiperSlide>
                   ))}

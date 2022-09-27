@@ -1,0 +1,24 @@
+.aside{
+  max-width:429px;
+  width:100%;
+  background:#F1F2F3;
+  padding:46px;
+  height:max-content;
+  
+}
+
+.item{
+  ul{
+    list-style: none;
+    margin-top:36px;
+    li:first-child{
+      font-size:20px;
+      font-weight: 500;
+     
+    }
+
+    li{
+      margin-bottom:16px;
+    }
+  }
+}

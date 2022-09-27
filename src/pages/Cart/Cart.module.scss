@@ -1,0 +1,70 @@
+@import '../../styles/layout.scss';
+
+.cart_header{
+  display:flex;
+  justify-content:flex-start;
+  padding:26px 0px;
+  display:none;
+  p{
+    width:100%;
+    text-align: left;
+  }
+
+  p:nth-child(4){
+    position:relative;
+    left:-60px;
+  }
+
+  @include mobile(){
+    display:none;
+  }
+
+}
+
+.cart_row{
+  margin-bottom:36px;
+  display:flex;
+
+  @include mobile(){
+    flex-direction: column;
+  }
+
+}
+
+
+.box_product{
+  max-width:416px;
+  width:100%;
+  display:flex;
+  gap:16px;
+  @include mobile(){
+    padding:26px 0px;
+  }
+}
+
+.box_right{
+  max-width:456px;
+  width:100%;
+  display:flex;
+  gap:16px;
+  div{
+    max-width:120px;
+    width:100%;
+  }
+  div:nth-child(4){
+    max-width:40px;
+    width:100%;
+  }
+   .box_quantity{
+    input{
+      width:70px;
+      height:50px;
+      border:0px;
+      background:#F5F7FF;
+      padding:12px;
+    }
+  }
+  .box_price,.box_subtotal{
+    font-weight: 500;
+  }
+}

@@ -5,7 +5,7 @@ export function RowIcons(){
   return(
     <div className={styles.row_icons}>
         {[1,2,3].map((index)=>(
-          <CardIcons icone={icone_fone} alt='fone'/>
+          <CardIcons key={index} icone={icone_fone} alt='fone'/>
         ))}
     </div>
   )

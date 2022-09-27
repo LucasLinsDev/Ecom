@@ -1,5 +1,3 @@
-import React from 'react';
-import logo from './logo.svg';
 import './styles/index.scss';
 import {Routes,Route} from 'react-router-dom';
 
@@ -9,6 +7,12 @@ import { Product } from './pages/Product/Product';
 import { Register } from './pages/Register/Register';
 import { Order } from './pages/Order/Order';
 import { Contact } from './pages/Contact/Contact';
+import { Cart } from './pages/Cart/Cart';
+import { About } from './pages/About/About';
+import { Faq } from './pages/Faq/Faq';
+import { Account } from './pages/Admin/Account/Account';
+import ShippingDetails from './pages/Admin/Shipping/Shipping';
+import MyOrders from './pages/Admin/MyOrder/MyOrder';
 
 function App() {
   return (
@@ -18,7 +22,13 @@ function App() {
         <Route path='/product' element={<Product/>}/>
         <Route path='/register' element={<Register/>}/>
         <Route path='/order' element={<Order/>}/>
-        <Route path='/Contact' element={<Contact/>}/>
+        <Route path='/contact' element={<Contact/>}/>
+        <Route path='/cart' element={<Cart/>}/>
+        <Route path='/about' element={<About/>}/>
+        <Route path='/faq' element={<Faq/>}/>
+        <Route path='/account' element={<Account/>}/>
+        <Route path='/shipping' element={<ShippingDetails/>}/>
+        <Route path='/my-order' element={<MyOrders/>}/>
       </Routes>
   );
 }

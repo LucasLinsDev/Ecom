@@ -1,0 +1,64 @@
+@import '../../../../styles/layout.scss';
+
+.my_card{
+  position: absolute;
+  top:80px;
+  right:80px;
+  background:white;
+  width:310px;
+  box-shadow: 0px 4px 13px rgba(181, 210, 255, 0.25);
+  border-radius:4px;
+  padding:26px 0px;
+  @include mobile(){
+    top:90px;
+    width:100%;
+    right:0px;
+  }
+  
+}
+
+.card_header{
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  gap:8px;
+  width:100%;
+  h1{
+    font-size:20px;
+    text-align: center;
+
+  }
+  button{
+    margin:0 auto;
+    margin-bottom:16px
+  }
+}
+
+.cart_item{
+
+  border:1px solid #CACDD8;
+  display:flex;
+  gap:16px;
+  align-items: center;
+  padding:18px 18px;
+}
+
+.cart_image{
+  width:60px;
+  height:auto;
+  img{
+    width:100%;
+  }
+}
+.cart_subtotal{
+  padding:16px 0px;
+  text-align: center;
+  span{
+    font-size:12px;
+    margin-right:6px;
+  }
+  h1{
+    font-size:20px;
+    margin-bottom:16px;
+  }
+}

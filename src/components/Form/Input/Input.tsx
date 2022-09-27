@@ -12,13 +12,13 @@ interface InputProps{
 
 }
 
-export function Input({label,type,placeholder,subtext,name,id,onChange,width}:InputProps){
+export function Input({label='',type,placeholder,subtext='',name,id,onChange,width}:InputProps){
   return(
     <div className={styles.input_box}>
-      <label>{label}</label>
+    {label != '' && <label>{label}</label> }  
       
       <input type={type} placeholder={placeholder} name={name} id={id}  onChange={onChange}/>
-      <div className={styles.input_subtext}>{subtext}</div>
+     {subtext !=  '' &&  <div className={styles.input_subtext}>{subtext}</div>} 
     </div>
   )
 }

@@ -1,0 +1,67 @@
+
+@import '../../styles/layout.scss';
+
+.faq_content{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:16px;
+  height:100%;
+  width:100%; 
+   h1{
+    width:60%;
+       @include mobile(){
+  width:90%;
+}
+  }
+  p{
+    width:90%;
+    font-size:16px;
+   @include mobile(){
+  width:100%;
+  margin-bottom:26px;
+}
+  }
+  padding-left:100px;
+@include mobile(){
+  padding-left:0px;
+}
+}
+
+.faq_image{
+  width:100%;
+  height:100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  img{width:100%; }
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.faq_content_right{
+    display:flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:16px;
+  height:100%;
+  width:100%; 
+  h1{
+    width:60%;
+       @include mobile(){
+  width:90%;
+}
+  }
+  p{
+    width:90%;
+    font-size:16px;
+   @include mobile(){
+  width:100%;
+    margin-bottom:26px;
+}
+  }
+  padding-left:100px;
+@include mobile(){
+  padding-left:0px;
+}
+}

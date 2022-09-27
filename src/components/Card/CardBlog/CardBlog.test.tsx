@@ -17,7 +17,7 @@ describe('Card Blog Component',()=>{
 
   });
 
-  it('check text the component',()=>{
+  it('check text in component',()=>{
 
     const {getByText} = render(<CardBlog/>)
     expect(getByText('If you’ve recently made a desktop PC or laptop purchase, you might want to consider adding peripherals to enhance your home office setup, your gaming rig, or your business workspace...')).toBeInTheDocument();

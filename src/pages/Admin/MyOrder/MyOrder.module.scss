@@ -1,0 +1,103 @@
+.myorders{
+  
+  display:flex;
+  gap:46px;
+  max-width:1440px;
+  width:100%;
+  margin:0 auto;
+  padding:96px 0px;
+
+}
+.my_orders_header_content{
+  display:flex;
+  gap:26px;
+  padding:26px 0px;
+  align-items: center;
+}
+
+.myorders_container{
+  width:100%;
+
+}
+
+.myorders_item{
+  width:100%;
+  display:flex;
+  gap:26px;
+  position:relative;
+  padding:46px 0px;
+  
+  border-bottom:1px solid silver;
+  button{
+    position:absolute;
+    top:46px;
+    right:0px;
+  }
+}
+
+.myorders_informations{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  ul {
+    list-style: none;
+    li{
+      margin-bottom:8px;
+    }
+  }
+  button{
+    display:block;
+    width:200px !important;
+    height:50px;
+    padding:8px 20px;
+    width:100%;
+    
+    border-radius:0px;
+  }
+  button:first-child{
+    margin-bottom:8px;
+  }
+}
+
+@media screen and (max-width:1130px){
+  .myorders_item{
+    button{
+      position:relative;
+      top:16px;
+      max-width:100% !important;
+
+    }
+  }
+}
+
+@media screen and (max-width:880px){
+  .myorders{
+   flex-direction: column-reverse;
+  }
+  
+}
+
+@media screen and (max-width:570px){
+  .myorders_informations{
+    flex-direction: column;
+    align-items: flex-start;
+    gap:26px;
+  
+    .block_buttons{
+        button{
+        max-width:100% ;
+        width:450px ;
+    }
+    }
+  }
+
+  .myorders_item{
+    flex-direction: column;
+  }
+
+  .myorder_left{
+    img{
+      width:100%;
+    }
+  }
+}
