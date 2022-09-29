@@ -1,6 +1,9 @@
 import styles from './Companies.module.scss';
 import logo_companie from '../../../resource/img/01.png';
 
+
+
+
 export function Companies(){
   return (
       <div className={styles.container_companie}>

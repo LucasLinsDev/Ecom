@@ -9,13 +9,13 @@ import arrow from '../../resource/img/arrow.png'
 import { Banners } from '../../libs/http/banners/banners.types';
 
 interface HeroProps{
-  data:[any]
-  
+  data:any
 }
 
-export function Hero(data:HeroProps){
 
-  console.log(data);
+
+export function Hero({data}:any){
+
   
   return (
     <div className={styles.banner}>
@@ -23,24 +23,34 @@ export function Hero(data:HeroProps){
       <div className={styles.content_arrow}>
 
       <Swiper
-        
         navigation={{
           prevEl:'.prev',
           nextEl:'.next',
         }}
-
         loop={true}
         spaceBetween={10}
         modules={[Navigation,Thumbs]}
         grabCursor={true}
         className={styles.navigation}
       >
+          {!data ?(
+            <SwiperSlide >
+              <img src={banner} alt=""/>
+            </SwiperSlide>
+          ) : (
+           <>
+           {data.map((item:any)=>(
+             <SwiperSlide key={item._id}>
+                <img src={item.url} alt={item.title}/>
+            </SwiperSlide>
+            ))}
+           </>
+         )}
+        
+  
 
-        {[1,2,3,4,5].map((index)=>(
-           <SwiperSlide key={index}>
-             <img src={banner} alt=""/>
-           </SwiperSlide>
-        ))} 
+         
+
     
     
       </Swiper>

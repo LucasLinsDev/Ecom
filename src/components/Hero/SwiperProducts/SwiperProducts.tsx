@@ -5,11 +5,13 @@ import 'swiper/css/thumbs'
 import {Swiper,SwiperSlide} from 'swiper/react';
 import {Navigation,Thumbs } from 'swiper';
 import { CartProduct } from '../../Card/Product/CardProduct';
+
 import ps5 from '../../../resource/img/ps5.png'
 import arrow from '../../../resource/img/arrow.png';
 
-
 export function SwiperProducts(){
+ 
+
   return (
     <div className={styles.content_arrow}>
             <Swiper

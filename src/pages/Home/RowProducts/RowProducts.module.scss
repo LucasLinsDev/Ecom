@@ -76,6 +76,7 @@
   height:30px;
   display:flex;
   gap:16px;
+  margin-bottom:26px;
   @include mobile(){
     height:50px;
   }

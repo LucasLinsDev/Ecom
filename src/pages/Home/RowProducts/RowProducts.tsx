@@ -4,15 +4,26 @@ import { CartProduct } from '../../../components/Card/Product/CardProduct';
 
 import {Swiper,SwiperSlide} from 'swiper/react';
 import {Navigation,Thumbs } from 'swiper';
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import ps5 from '../../../resource/img/ps5.png';
 import arrow from '../../../resource/img/arrow.png';
 import { Banner } from '../../../components/Banner/Banner';
+import { Produtcs } from '../../../libs/http/products/products.types';
 
-export function RowProducts(){
+
+interface ProductsProps{
+  data:Produtcs[]
+}
+
+export function RowProducts({data}:ProductsProps){
 
   const preRef=useRef(null);
   const nextRef=useRef(null);
+
+
+  useEffect(()=>{
+
+  },[])
 
 
   return (
@@ -65,12 +76,20 @@ export function RowProducts(){
                 },
                 
                 }}>
-                
-                  {[1,2,3,4,5,6,7,8,9,10].map((index)=>(
+
+                  {[data.map((item)=>(
+                    <SwiperSlide>
+                           <CartProduct title={item.name} price={item.price} image={item.image} />
+                         
+                  </SwiperSlide>
+                  ))]}
+
+     
+                  {/* {[1,2,3,4,5,6,7,8,9,10].map((index)=>(
                       <SwiperSlide key={index}>
                           <CartProduct title='PS5' price='999.99' image={ps5} />
                         </SwiperSlide>
-                  ))}
+                  ))} */}
                    <div ref={preRef}>  <img src={arrow}/>    </div>
                    <div ref={nextRef}> <img src={arrow}/>    </div>
         
