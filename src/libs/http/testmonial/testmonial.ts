@@ -1,7 +1,7 @@
 import { axios } from "../axios";
-import { Testmoinal } from "./testmonial.types";
+import { Testmonials } from "./testmonial.types";
 
 export const testmonial = {
-  getTestmonial: (): Promise<{ data: Testmoinal[] }> =>
+  getTestmonial: (): Promise<{ data: Testmonials[] }> =>
     axios.get("/api/v1/testmonial"),
 };

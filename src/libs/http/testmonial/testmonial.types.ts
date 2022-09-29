@@ -1,4 +1,4 @@
-export interface Testmoinal {
+export interface Testmonials {
   id: number;
   name: string;
   richText: string;

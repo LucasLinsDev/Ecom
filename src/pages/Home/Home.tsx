@@ -10,13 +10,16 @@ import { RowTestmonial } from "./RowTestmonial/RowTestmonial";
 import { banners as bannersHttp } from "../../libs/http/banners/banner";
 import { products as productsHttp } from "../../libs/http/products/produts";
 import { blogs as blogsHttp } from "../../libs/http/blogs/blogs";
+import { testmonial as testmonialHttp } from "../../libs/http/testmonial/testmonial";
 import { Produtcs } from "../../libs/http/products/products.types";
 import { Blogs } from "../../libs/http/blogs/blogs.types";
+import { Testmonials } from "../../libs/http/testmonial/testmonial.types";
 
 export function Home() {
   const [banners, setBanners] = useState<Banners[]>();
   const [products, setProducts] = useState<Produtcs[]>([]);
   const [blogs, setBlogs] = useState<Blogs[]>([]);
+  const [testmonial, setTestmonial] = useState<Testmonials[]>([]);
 
   useEffect(() => {
     const getBanners = async () => {
@@ -44,6 +47,14 @@ export function Home() {
     getBlogs();
   }, []);
 
+  useEffect(() => {
+    const getTestmonial = async () => {
+      const { data } = await testmonialHttp.getTestmonial();
+      setTestmonial(data);
+    };
+    getTestmonial();
+  }, []);
+
   return (
     <>
       <Layout>
@@ -53,7 +64,7 @@ export function Home() {
         ))}
         <Companies />
         <RowBlog data={blogs} />
-        <RowTestmonial />
+        <RowTestmonial data={testmonial} />
         <RowIcons />
       </Layout>
     </>
