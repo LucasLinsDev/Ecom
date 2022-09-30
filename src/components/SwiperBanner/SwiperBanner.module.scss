@@ -1,0 +1,53 @@
+.banner {
+  width: inherit;
+  img {
+    width: 100%;
+  }
+  margin-top: 16px;
+  z-index: 1;
+}
+
+.swiper {
+  .swiper-button-next:after,
+  .swiper-button-prev::before {
+    opacity: 0 !important;
+    transition: 0.5s ease-in-out;
+    display: none;
+  }
+}
+
+.content_arrow {
+  position: relative;
+  > div:last-child {
+    width: max-content;
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    display: Flex;
+    align-items: center;
+    top: 0px;
+    z-index: 1000;
+    &:hover {
+      opacity: 0.7;
+    }
+    cursor: pointer;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  > div:nth-child(2) {
+    transform: rotate(180deg);
+    width: max-content;
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    display: Flex;
+    align-items: center;
+    top: 0px;
+    z-index: 1000;
+    &:hover {
+      opacity: 0.7;
+    }
+    cursor: pointer;
+  }
+}

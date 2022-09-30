@@ -1,0 +1,140 @@
+.landing {
+  height: 100vh;
+  background: black;
+  color: white;
+}
+
+.landing_banner {
+  padding-bottom: 46px;
+  img {
+    width: 100%;
+  }
+}
+
+.columns_items {
+  display: flex;
+  gap: 20px;
+  padding: 26px 0px;
+  justify-content: space-between;
+  div {
+    flex: 1;
+  }
+  @media screen and (max-width: 900px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    div {
+      flex: 1;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+  }
+}
+
+.columns_items_columns {
+  display: flex;
+  gap: 20px;
+  padding: 26px 0px;
+  justify-content: space-between;
+  div {
+    flex: 1;
+  }
+  @media screen and (max-width: 900px) {
+    display: flex;
+    flex-wrap: wrap;
+    div {
+      flex: 1 1 150px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+  }
+}
+.column_content_column {
+  background: red;
+  height: 180px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  img {
+    object-fit: cover;
+  }
+}
+
+.columns_row {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  div {
+    flex: 1 1 120px;
+    max-width: 120px;
+
+    img {
+      height: auto;
+      border-radius: 100%;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    justify-content: flex-start;
+    div {
+      max-width: 140px;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    justify-content: flex-start;
+    div {
+      max-width: 160px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    justify-content: flex-start;
+    div {
+      max-width: 50%;
+    }
+  }
+}
+
+.columns_oportunit {
+  h2 {
+    font-weight: 400;
+  }
+}
+
+.columns_oportunit_item {
+  padding: 26px 0px;
+
+  text-align: center;
+  p {
+    margin-top: 16px;
+    font-size: 15px;
+  }
+}
+
+.rows {
+  display: flex;
+  gap: 16px;
+  height: 100%;
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+  }
+}
+
+.row_item {
+  display: flex;
+  gap: 16px;
+  height: 350px;
+  div {
+    display: flex;
+    gap: 16px;
+    overflow: hidden;
+    object-position: center;
+    img {
+      object-fit: cover;
+    }
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+    }
+  }
+}
