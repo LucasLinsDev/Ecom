@@ -14,6 +14,9 @@ import { Account } from "./pages/Admin/Account/Account";
 import ShippingDetails from "./pages/Admin/Shipping/Shipping";
 import MyOrders from "./pages/Admin/MyOrder/MyOrder";
 import { Landing } from "./pages/Landing/Landing";
+import { EditorPage } from "./pages/EditorPage/EditorPage";
+import { MenuContainer } from "./components/Header/MenuContainer/MenuContainer";
+import { ProductPage } from "./pages/ProductPage/ProductPage";
 
 function App() {
   return (
@@ -31,6 +34,9 @@ function App() {
       <Route path="/shipping" element={<ShippingDetails />} />
       <Route path="/my-order" element={<MyOrders />} />
       <Route path="/landing" element={<Landing />} />
+      <Route path="/editing" element={<EditorPage />} />
+      <Route path="/drop" element={<MenuContainer />} />
+      <Route path="/productpage" element={<ProductPage />} />
     </Routes>
   );
 }

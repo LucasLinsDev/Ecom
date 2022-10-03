@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Layout } from "../../components/Layout/Layout";
-import { EditorPage } from "./EditorPage/EditorPage";
 import styles from "./Landing.module.scss";
 import banner from "../../resource/landing/banner_01.gif";
 import { SwiperBanner } from "../../components/SwiperBanner/SwiperBanner";

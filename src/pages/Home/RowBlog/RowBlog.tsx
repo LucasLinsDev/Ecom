@@ -12,11 +12,7 @@ export function RowBlog({ data }: BlogsProps) {
   return (
     <div className={styles.rowBlog}>
       {data.map((item) => (
-        <CardBlog img={item.image} text={item.richText} key={item._id} />
-      ))}
-
-      {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((index) => (
-        <CardBlog key={index} />
+        <CardBlog text={item.richText} key={item._id} />
       ))}
     </div>
   );
