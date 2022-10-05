@@ -17,13 +17,16 @@ import { Landing } from "./pages/Landing/Landing";
 import { EditorPage } from "./pages/EditorPage/EditorPage";
 import { MenuContainer } from "./components/Header/MenuContainer/MenuContainer";
 import { ProductPage } from "./pages/ProductPage/ProductPage";
+import { Default } from "./pages/Default/Default";
+import { PageOne } from "./pages/LandingEditor/PageOne/PageOne";
+import { PageTwo } from "./pages/LandingEditor/PageTwo/PageTwo";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/products" element={<Products />} />
-      <Route path="/product" element={<Product />} />
+      <Route path="/product/:id" element={<Product />} />
       <Route path="/register" element={<Register />} />
       <Route path="/order" element={<Order />} />
       <Route path="/contact" element={<Contact />} />
@@ -37,6 +40,8 @@ function App() {
       <Route path="/editing" element={<EditorPage />} />
       <Route path="/drop" element={<MenuContainer />} />
       <Route path="/productpage" element={<ProductPage />} />
+      <Route path="/default" element={<Default />} />
+      <Route path="/page" element={<PageTwo />} />
     </Routes>
   );
 }

@@ -1,0 +1,30 @@
+.container {
+  max-width: 1440px;
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  padding: 26px 26px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.control_btn_container {
+  display: flex;
+  gap: 8px;
+  button {
+    width: 100px;
+  }
+}
+
+#filename-input {
+  margin-left: 10px;
+}
+
+.content {
+  padding: 46px 0px;
+  font-size: 20px;
+}
