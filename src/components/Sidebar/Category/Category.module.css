@@ -1,0 +1,17 @@
+.category_header h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.category_content ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.category_content ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=Category.module.css.map */

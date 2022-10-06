@@ -1,0 +1,73 @@
+:root {
+  --primary-color:blue;
+  --secondary-color:#F5F7FF;
+  --primary-color:#0156FF;
+  --dark-color:#000000;
+  --primary-silver:#A2A6B0;
+  --primary-silver-05:#C1C1C1;
+  --primary-yellow:#FFB800;
+  --primary-orange:#F36000;
+  --secondary-color:#F5F7FF;
+  --white:white;
+}
+
+:root {
+  --primary-color:blue;
+  --secondary-color:#F5F7FF;
+  --primary-color:#0156FF;
+  --dark-color:#000000;
+  --primary-silver:#A2A6B0;
+  --primary-silver-05:#C1C1C1;
+  --primary-yellow:#FFB800;
+  --primary-orange:#F36000;
+  --secondary-color:#F5F7FF;
+  --white:white;
+}
+
+.logo {
+  max-width: 85px;
+  height: 80px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  .logo {
+    width: 70px;
+    height: 50px;
+    background: var(--primary-color);
+    position: absolute;
+    z-index: 999;
+    top: -16px;
+    display: none;
+  }
+  .logo img {
+    width: 18px;
+    height: 24px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  .logo img:hover {
+    opacity: 0.7;
+  }
+  .logo svg {
+    width: 18px;
+    height: 24px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  .logo svg:hover {
+    opacity: 0.7;
+  }
+}
+/*# sourceMappingURL=Logo.module.css.map */

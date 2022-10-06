@@ -1,0 +1,129 @@
+:root {
+  --primary-color:blue;
+  --secondary-color:#F5F7FF;
+  --primary-color:#0156FF;
+  --dark-color:#000000;
+  --primary-silver:#A2A6B0;
+  --primary-silver-05:#C1C1C1;
+  --primary-yellow:#FFB800;
+  --primary-orange:#F36000;
+  --secondary-color:#F5F7FF;
+  --white:white;
+}
+
+.container_products {
+  padding: 26px 0px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 26px;
+}
+
+.row > div:first-child {
+  width: 280px;
+}
+
+.row > div:last-child {
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .row > div:first-child {
+    width: 100%;
+  }
+}
+
+.swiper_wrapper {
+  position: relative;
+}
+
+.swiper_wrapper > div:last-child {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  display: Flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.swiper_wrapper > div:last-child:hover {
+  opacity: 0.7;
+}
+
+.swiper_wrapper > div:last-child:hover {
+  opacity: 0.7;
+}
+
+.swiper_wrapper > div:nth-child(2) {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  display: Flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.swiper_wrapper > div:nth-child(2):hover {
+  opacity: 0.7;
+}
+
+.header {
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+  margin-bottom: 26px;
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    height: 50px;
+  }
+}
+
+.filter {
+  font-size: 16px;
+  opacity: 0.6;
+  background: transparent;
+  border: 0px;
+  height: 30px;
+  border-radius: 0px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
+.filter_active {
+  font-weight: bold;
+  border-bottom: 2px solid blue;
+}
+/*# sourceMappingURL=RowProducts.module.css.map */

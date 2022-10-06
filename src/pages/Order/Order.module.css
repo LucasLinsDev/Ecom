@@ -1,0 +1,43 @@
+:root {
+  --primary-color:blue;
+  --secondary-color:#F5F7FF;
+  --primary-color:#0156FF;
+  --dark-color:#000000;
+  --primary-silver:#A2A6B0;
+  --primary-silver-05:#C1C1C1;
+  --primary-yellow:#FFB800;
+  --primary-orange:#F36000;
+  --secondary-color:#F5F7FF;
+  --white:white;
+}
+
+.order_header {
+  margin-top: 36px;
+  width: 80%;
+}
+
+.order_header h2 {
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+.order_header hr {
+  margin-bottom: 18px;
+}
+
+@media screen and (max-width: 800px) {
+  .order_header {
+    width: 100%;
+  }
+}
+
+.order_inputs {
+  width: 80%;
+}
+
+@media screen and (max-width: 800px) {
+  .order_inputs {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=Order.module.css.map */

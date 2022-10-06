@@ -1,0 +1,92 @@
+:root {
+  --primary-color:blue;
+  --secondary-color:#F5F7FF;
+  --primary-color:#0156FF;
+  --dark-color:#000000;
+  --primary-silver:#A2A6B0;
+  --primary-silver-05:#C1C1C1;
+  --primary-yellow:#FFB800;
+  --primary-orange:#F36000;
+  --secondary-color:#F5F7FF;
+  --white:white;
+}
+
+.my_card {
+  position: absolute;
+  top: 80px;
+  right: 80px;
+  background: white;
+  width: 310px;
+  -webkit-box-shadow: 0px 4px 13px rgba(181, 210, 255, 0.25);
+          box-shadow: 0px 4px 13px rgba(181, 210, 255, 0.25);
+  border-radius: 4px;
+  padding: 26px 0px;
+}
+
+@media screen and (max-width: 800px) {
+  .my_card {
+    top: 90px;
+    width: 100%;
+    right: 0px;
+  }
+}
+
+.card_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.card_header h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.card_header button {
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+.cart_item {
+  border: 1px solid #CACDD8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 18px 18px;
+}
+
+.cart_image {
+  width: 60px;
+  height: auto;
+}
+
+.cart_image img {
+  width: 100%;
+}
+
+.cart_subtotal {
+  padding: 16px 0px;
+  text-align: center;
+}
+
+.cart_subtotal span {
+  font-size: 12px;
+  margin-right: 6px;
+}
+
+.cart_subtotal h1 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+/*# sourceMappingURL=MyCart.module.css.map */

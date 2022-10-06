@@ -1,0 +1,18 @@
+.input {
+  background-color: transparent;
+  border: 0;
+  padding: 8px;
+}
+
+.input:hover {
+  background-color: #d3d3d3;
+  cursor: pointer;
+}
+
+.layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 36px;
+}
+/*# sourceMappingURL=EditorPage.module.css.map */

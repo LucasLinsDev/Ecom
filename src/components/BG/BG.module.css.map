@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,GAAG,CAAA;EACD,KAAK,EAAC,IAAI;EACV,KAAK,EAAC,KAAK;EACX,OAAO,EAAC,QAAQ;CACjB",
+    "sources": [
+        "BG.module.scss"
+    ],
+    "names": [],
+    "file": "BG.module.css"
+}

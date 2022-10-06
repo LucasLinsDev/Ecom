@@ -1,0 +1,58 @@
+:root {
+  --primary-color:blue;
+  --secondary-color:#F5F7FF;
+  --primary-color:#0156FF;
+  --dark-color:#000000;
+  --primary-silver:#A2A6B0;
+  --primary-silver-05:#C1C1C1;
+  --primary-yellow:#FFB800;
+  --primary-orange:#F36000;
+  --secondary-color:#F5F7FF;
+  --white:white;
+}
+
+.page_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page_header p {
+  font-size: 12px;
+  margin-bottom: 26px;
+}
+
+.page_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+}
+
+.page_content h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+  .page_content h1 {
+    font-size: 20px;
+  }
+}
+
+.page_content button {
+  height: 40px;
+  width: 120px;
+}
+/*# sourceMappingURL=PageHeader.module.css.map */

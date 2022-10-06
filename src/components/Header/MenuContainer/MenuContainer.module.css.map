@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "MenuContainer.module.scss"
+    ],
+    "names": [],
+    "file": "MenuContainer.module.css"
+}

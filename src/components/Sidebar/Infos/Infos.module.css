@@ -1,0 +1,20 @@
+.infos_contact {
+  background: #F5F7FF;
+  max-width: 441px;
+  height: auto;
+  margin-right: auto;
+}
+
+.info_contact_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  padding: 16px 24px;
+}
+
+.info_contact_item_content h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+/*# sourceMappingURL=Infos.module.css.map */

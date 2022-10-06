@@ -1,0 +1,109 @@
+.myaccount {
+  width: 100%;
+}
+
+.myaccount_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 36px;
+  border-bottom: 2px solid #F1F2F3;
+  margin-bottom: 26px;
+}
+
+.myaccount_button button {
+  border: 0px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 20px;
+  color: #1D1F22;
+  border-bottom: 2px solid #1D1F22;
+  border-radius: 0px;
+  position: relative;
+  bottom: -2px;
+}
+
+.myaccount_button button:nth-child(2) {
+  border: 0px;
+}
+
+.myaccount_button form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.forms {
+  margin-top: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 26px;
+  border: 0px;
+}
+
+.forms input {
+  border: 0px;
+  width: 100%;
+  border-bottom: 1px solid #1D1F22;
+  padding: 8px;
+}
+
+.forms .form_left, .forms .form_right {
+  width: 100%;
+}
+
+.forms span {
+  font-size: 10px;
+  color: blue;
+}
+
+.form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 46px;
+}
+
+.form input {
+  border: 0px;
+  width: 100%;
+  border-bottom: 1px solid #1D1F22;
+  padding: 8px;
+  height: 50px;
+}
+
+.form button {
+  background: blue;
+  border-radius: 0px;
+  color: white;
+  height: 50px;
+  border: 0px;
+  max-width: 250px;
+  padding: 0px 24px;
+  font-size: 16px;
+}
+
+.form p {
+  font-size: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+/*# sourceMappingURL=Account.module.css.map */

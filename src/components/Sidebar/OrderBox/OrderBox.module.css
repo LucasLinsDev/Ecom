@@ -1,0 +1,62 @@
+.order_container {
+  width: 100%;
+  width: 100%;
+  background: #F5F7FF;
+  padding: 24px;
+}
+
+.order_container .order_header {
+  padding: 16px 0px;
+}
+
+.order_container .order_header h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.order_container .order_header hr {
+  margin: 8px 0px;
+  margin-top: 16px;
+  opacity: 0.4;
+  height: 0.6px;
+}
+
+.order_container .order_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+}
+
+.order_container .order_item img {
+  max-width: 50px;
+}
+
+.order_container .order_item_content p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.order_container .order_item_content span {
+  font-size: 14px;
+  color: black;
+  opacity: 0.6;
+}
+
+.order_container .order_item_content span:nth-child(3) {
+  opacity: 1;
+  color: black;
+  margin-left: 8px;
+}
+
+.order_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+/*# sourceMappingURL=OrderBox.module.css.map */

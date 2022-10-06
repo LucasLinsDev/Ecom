@@ -1,0 +1,32 @@
+:root {
+  --primary-color:blue;
+  --secondary-color:#F5F7FF;
+  --primary-color:#0156FF;
+  --dark-color:#000000;
+  --primary-silver:#A2A6B0;
+  --primary-silver-05:#C1C1C1;
+  --primary-yellow:#FFB800;
+  --primary-orange:#F36000;
+  --secondary-color:#F5F7FF;
+  --white:white;
+}
+
+.input_box label {
+  font-weight: 500;
+}
+
+.input_box input {
+  margin: 16px 0px;
+  height: 47px;
+  width: 100%;
+  font-size: 18px;
+  letter-spacing: 1.8px;
+  padding: 16px;
+  border-radius: 4px;
+  border: 1px solid silver;
+}
+
+.input_subtext {
+  margin-bottom: 16px;
+}
+/*# sourceMappingURL=Input.module.css.map */

@@ -1,0 +1,47 @@
+:root {
+  --primary-color:blue;
+  --secondary-color:#F5F7FF;
+  --primary-color:#0156FF;
+  --dark-color:#000000;
+  --primary-silver:#A2A6B0;
+  --primary-silver-05:#C1C1C1;
+  --primary-yellow:#FFB800;
+  --primary-orange:#F36000;
+  --secondary-color:#F5F7FF;
+  --white:white;
+}
+
+.rowBlog {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  gap: 16px;
+  -ms-grid-columns: (minmax(100px, 1fr))[6];
+      grid-template-columns: repeat(6, minmax(100px, 1fr));
+}
+
+.rowBlog > div {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+  .rowBlog {
+    -ms-grid-columns: (minmax(100px, 1fr))[5];
+        grid-template-columns: repeat(5, minmax(100px, 1fr));
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .rowBlog {
+    -ms-grid-columns: (minmax(100px, 1fr))[4];
+        grid-template-columns: repeat(4, minmax(100px, 1fr));
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .rowBlog {
+    -ms-grid-columns: (minmax(100px, 1fr))[2];
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+  }
+}
+/*# sourceMappingURL=RowBlog.module.css.map */

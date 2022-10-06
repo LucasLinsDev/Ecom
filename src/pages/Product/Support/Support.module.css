@@ -1,0 +1,102 @@
+:root {
+  --primary-color:blue;
+  --secondary-color:#F5F7FF;
+  --primary-color:#0156FF;
+  --dark-color:#000000;
+  --primary-silver:#A2A6B0;
+  --primary-silver-05:#C1C1C1;
+  --primary-yellow:#FFB800;
+  --primary-orange:#F36000;
+  --secondary-color:#F5F7FF;
+  --white:white;
+}
+
+.support {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 26px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.support > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+@media screen and (max-width: 800px) {
+  .support {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.support_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.support_item {
+  padding: 12px;
+  border: 1px solid #9f9fff;
+  width: 360px;
+  border-radius: 4px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.support_item p {
+  font-size: 16px;
+  color: black;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 800px) {
+  .support_item {
+    width: 100%;
+  }
+}
+
+.support_item:hover {
+  border: 1px solid blue;
+}
+
+.support_image {
+  width: 100%;
+}
+
+.support_image img {
+  width: 100%;
+}
+
+.content_item {
+  display: none;
+  width: 250px;
+  position: relative;
+  top: 0px;
+}
+/*# sourceMappingURL=Support.module.css.map */

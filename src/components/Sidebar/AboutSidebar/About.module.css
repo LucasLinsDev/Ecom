@@ -1,0 +1,20 @@
+.aside_container_list {
+  width: 100%;
+  background-color: #F5F7FF;
+  padding: 24px;
+}
+
+.aside_container_list h4 {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.aside_container_list ul {
+  list-style: none;
+}
+
+.aside_container_list ul li {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+/*# sourceMappingURL=About.module.css.map */

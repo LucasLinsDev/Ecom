@@ -1,0 +1,68 @@
+.banner {
+  width: inherit;
+  margin-top: 16px;
+  z-index: 1;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.swiper .swiper-button-next:after,
+.swiper .swiper-button-prev::before {
+  opacity: 0 !important;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  display: none;
+}
+
+.content_arrow {
+  position: relative;
+}
+
+.content_arrow > div:last-child {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  display: Flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.content_arrow > div:last-child:hover {
+  opacity: 0.7;
+}
+
+.content_arrow > div:last-child:hover {
+  opacity: 0.7;
+}
+
+.content_arrow > div:nth-child(2) {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  display: Flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.content_arrow > div:nth-child(2):hover {
+  opacity: 0.7;
+}
+/*# sourceMappingURL=Hero.module.css.map */

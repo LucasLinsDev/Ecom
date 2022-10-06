@@ -1,0 +1,119 @@
+.myorders {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 46px;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 96px 0px;
+}
+
+.my_orders_header_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 26px;
+  padding: 26px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.myorders_container {
+  width: 100%;
+}
+
+.myorders_item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 26px;
+  position: relative;
+  padding: 46px 0px;
+  border-bottom: 1px solid silver;
+}
+
+.myorders_item button {
+  position: absolute;
+  top: 46px;
+  right: 0px;
+}
+
+.myorders_informations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.myorders_informations ul {
+  list-style: none;
+}
+
+.myorders_informations ul li {
+  margin-bottom: 8px;
+}
+
+.myorders_informations button {
+  display: block;
+  width: 200px !important;
+  height: 50px;
+  padding: 8px 20px;
+  width: 100%;
+  border-radius: 0px;
+}
+
+.myorders_informations button:first-child {
+  margin-bottom: 8px;
+}
+
+@media screen and (max-width: 1130px) {
+  .myorders_item button {
+    position: relative;
+    top: 16px;
+    max-width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .myorders {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .myorders_informations {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 26px;
+  }
+  .myorders_informations .block_buttons button {
+    max-width: 100%;
+    width: 450px;
+  }
+  .myorders_item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .myorder_left img {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=MyOrder.module.css.map */

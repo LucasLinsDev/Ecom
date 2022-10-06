@@ -1,0 +1,72 @@
+:root {
+  --primary-color:blue;
+  --secondary-color:#F5F7FF;
+  --primary-color:#0156FF;
+  --dark-color:#000000;
+  --primary-silver:#A2A6B0;
+  --primary-silver-05:#C1C1C1;
+  --primary-yellow:#FFB800;
+  --primary-orange:#F36000;
+  --secondary-color:#F5F7FF;
+  --white:white;
+}
+
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 16px;
+  padding-top: 100px;
+}
+
+.description span:first-child {
+  color: black;
+}
+
+.description span {
+  font-size: 14px;
+  color: blue;
+}
+
+.description p {
+  width: 80%;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 800px) {
+  .description p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .description {
+    padding: 46px 0px;
+  }
+}
+
+.description_colors input[type='radio'] {
+  /* remove standard background appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* create custom radiobutton appearance */
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  padding: 2px;
+  /* background-color only for content */
+  background-clip: content-box;
+  border: 2px solid #bbbbbb;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  cursor: pointer;
+}
+/*# sourceMappingURL=Description.module.css.map */

@@ -1,0 +1,59 @@
+:root {
+  --primary-color:blue;
+  --secondary-color:#F5F7FF;
+  --primary-color:#0156FF;
+  --dark-color:#000000;
+  --primary-silver:#A2A6B0;
+  --primary-silver-05:#C1C1C1;
+  --primary-yellow:#FFB800;
+  --primary-orange:#F36000;
+  --secondary-color:#F5F7FF;
+  --white:white;
+}
+
+.register {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 26px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.register > div {
+  max-width: 564px;
+  width: 100%;
+  height: 415px;
+  padding: 46px;
+  background: #F5F7FF;
+}
+
+.register > div h1 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.register > div p {
+  font-size: 14px;
+  margin: 16px 0px;
+  font-weight: 300;
+}
+
+.register > div ul {
+  margin-top: 26px;
+  font-size: 14px;
+  margin-left: 16px;
+  font-weight: 300;
+  margin-bottom: 26px;
+}
+
+@media screen and (max-width: 800px) {
+  .register {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=Register.module.css.map */

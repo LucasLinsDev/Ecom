@@ -1,0 +1,11 @@
+.row_icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 36px;
+}
+
+.row_icons div {
+  text-align: center;
+}
+/*# sourceMappingURL=RowIcons.module.css.map */

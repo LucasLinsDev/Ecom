@@ -1,0 +1,71 @@
+.searchbox {
+  max-width: 250px;
+  width: 100%;
+  height: 47px;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 16px;
+  border-radius: 30px;
+  background: var(--secondary-color);
+  z-index: 1200;
+}
+
+.searchbox input {
+  padding-left: 16px;
+  max-width: 180px;
+  width: 100%;
+  height: 47px;
+  border-radius: 30px;
+  border: 0px;
+  background: transparent;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.searchbox input::-webkit-input-placeholder {
+  color: black;
+}
+
+.searchbox input:-ms-input-placeholder {
+  color: black;
+}
+
+.searchbox input::-ms-input-placeholder {
+  color: black;
+}
+
+.searchbox input::placeholder {
+  color: black;
+}
+
+.searchbox button {
+  width: 80px;
+  padding: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.searchbox button:hover {
+  opacity: 0.7;
+}
+/*# sourceMappingURL=SearchBox.module.css.map */

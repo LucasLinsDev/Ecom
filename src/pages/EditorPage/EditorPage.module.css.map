@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,CAAC;EACL,gBAAgB,EAAE,WAAW;EAC7B,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,GAAG;CAMb;;AATD,AAKE,MALI,AAKH,MAAM,CAAC;EACN,gBAAgB,EAAE,OAAO;EACzB,MAAM,EAAE,OAAO;CAChB;;AAGH,AAAA,OAAO,CAAC;EACN,OAAO,EAAE,IAAI;EACb,GAAG,EAAE,IAAI;CACV",
+    "sources": [
+        "EditorPage.module.scss"
+    ],
+    "names": [],
+    "file": "EditorPage.module.css"
+}

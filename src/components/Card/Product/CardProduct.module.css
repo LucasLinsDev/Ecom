@@ -1,0 +1,77 @@
+:root {
+  --primary-color:blue;
+  --secondary-color:#F5F7FF;
+  --primary-color:#0156FF;
+  --dark-color:#000000;
+  --primary-silver:#A2A6B0;
+  --primary-silver-05:#C1C1C1;
+  --primary-yellow:#FFB800;
+  --primary-orange:#F36000;
+  --secondary-color:#F5F7FF;
+  --white:white;
+}
+
+:root {
+  --primary-color:blue;
+  --secondary-color:#F5F7FF;
+  --primary-color:#0156FF;
+  --dark-color:#000000;
+  --primary-silver:#A2A6B0;
+  --primary-silver-05:#C1C1C1;
+  --primary-yellow:#FFB800;
+  --primary-orange:#F36000;
+  --secondary-color:#F5F7FF;
+  --white:white;
+}
+
+.card {
+  max-width: 241px;
+  width: 100%;
+  border-radius: 4px;
+  padding: 36px 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 6px;
+}
+
+.card p:last-child {
+  font-size: 10px;
+  color: var(--primary-silver-05);
+}
+
+.title {
+  font-size: 12px;
+  line-height: 150%;
+}
+
+.price {
+  font-size: 18px;
+  color: var(--primary-orange);
+}
+
+.image {
+  width: 100%;
+  max-width: 156px;
+  height: 150px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.button {
+  width: 100%;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  color: white;
+}
+/*# sourceMappingURL=CardProduct.module.css.map */

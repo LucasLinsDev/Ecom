@@ -1,0 +1,63 @@
+:root {
+  --primary-color:blue;
+  --secondary-color:#F5F7FF;
+  --primary-color:#0156FF;
+  --dark-color:#000000;
+  --primary-silver:#A2A6B0;
+  --primary-silver-05:#C1C1C1;
+  --primary-yellow:#FFB800;
+  --primary-orange:#F36000;
+  --secondary-color:#F5F7FF;
+  --white:white;
+}
+
+:root {
+  --primary-color:blue;
+  --secondary-color:#F5F7FF;
+  --primary-color:#0156FF;
+  --dark-color:#000000;
+  --primary-silver:#A2A6B0;
+  --primary-silver-05:#C1C1C1;
+  --primary-yellow:#FFB800;
+  --primary-orange:#F36000;
+  --secondary-color:#F5F7FF;
+  --white:white;
+}
+
+.menushow {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menushow p {
+  font-size: 24px;
+  color: var(--primary-silver);
+}
+
+.menushow svg {
+  opacity: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .menushow svg {
+    opacity: 1;
+  }
+}
+
+.menu ul {
+  margin-top: 16px;
+  list-style: none;
+  width: 100%;
+  padding-left: 0px;
+}
+
+.menu ul li {
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+/*# sourceMappingURL=Menu.module.css.map */
