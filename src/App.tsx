@@ -20,7 +20,11 @@ import { ProductPage } from "./pages/ProductPage/ProductPage";
 import { Default } from "./pages/Default/Default";
 import { PageOne } from "./pages/LandingEditor/PageOne/PageOne";
 import { PageTwo } from "./pages/LandingEditor/PageTwo/PageTwo";
-
+import { CanvasEditor } from "./pages/EditorPost";
+import { PageThree } from "./pages/LandingEditor/PageThree/PageThree";
+import { PageFour } from "./pages/LandingEditor/PageFour/PageFour";
+import "./App.css";
+import { PageFive } from "./pages/LandingEditor/PageFive/PageFive";
 function App() {
   return (
     <Routes>
@@ -41,7 +45,8 @@ function App() {
       <Route path="/drop" element={<MenuContainer />} />
       <Route path="/productpage" element={<ProductPage />} />
       <Route path="/default" element={<Default />} />
-      <Route path="/page" element={<PageTwo />} />
+      <Route path="/page" element={<PageFive />} />
+      <Route path="/canvas" element={<CanvasEditor />} />
     </Routes>
   );
 }

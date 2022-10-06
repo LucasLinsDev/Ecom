@@ -1,0 +1,32 @@
+.banner {
+  img {
+    width: 100%;
+  }
+}
+
+.title {
+  padding: 46px 0px;
+  width: 100%;
+  text-align: center;
+  h1 {
+    font-weight: 400;
+  }
+}
+
+.product {
+  text-align: center;
+  img {
+    margin: auto;
+    text-align: center;
+    border-bottom: 1px solid black;
+  }
+  h1 {
+    font-size: 20px;
+    text-align: left;
+    padding: 16px 0px;
+  }
+  p {
+    text-align: left;
+    font-size: 15px;
+  }
+}

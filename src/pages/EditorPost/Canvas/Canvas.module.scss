@@ -1,0 +1,117 @@
+.canvas {
+  max-width: 2000px;
+  width: 100%;
+  margin: 24px 46px;
+  height: 90vh;
+  background: white;
+  flex: 2;
+  border-radius: 20px;
+  display: flex;
+}
+
+.template {
+  width: 400px;
+  height: 100%;
+
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 36px 26px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.template_item {
+  width: 150px;
+  height: 200px;
+  border-radius: 20px;
+  background: silver;
+  margin-bottom: 20px;
+}
+
+.canvas_container {
+  padding: 46px 36px;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.user {
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    h2 {
+      color: #57859a;
+      font-weight: 400;
+    }
+    div {
+      background: #f65cb8;
+      width: 62px;
+      height: 62px;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+.canvas_editor {
+  flex: 1;
+  background: Red;
+}
+
+.save {
+  width: 62px;
+  height: 62px;
+  border: 1px solid #f65cb8;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.share {
+  width: 62px;
+  height: 62px;
+  background: #f65cb8;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.canvas_save_and_share {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  transition: all 0.5s ease-in-out;
+  div {
+    cursor: pointer;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+.content_editor {
+  width: 300px;
+  padding: 46px 26px;
+}
+.icons {
+  border: 3px solid #f65cb8;
+  border-radius: 100%;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+}
